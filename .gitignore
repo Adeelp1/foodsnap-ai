@@ -1,0 +1,6 @@
+venv/
+train/
+__pycache__
+
+database/database.py
+database/normalize.txt
