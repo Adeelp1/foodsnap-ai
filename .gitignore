@@ -1,6 +1,6 @@
 venv/
 train/
 __pycache__
-
+test/
 database/database.py
 database/normalize.txt
