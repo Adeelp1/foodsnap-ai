@@ -11,4 +11,4 @@ if __name__ == "__main__":
     nutri = obj.get_nutrition(name)
     cal, fat, carb, protien = nutri
 
-    print(f"food is a {name} and its nutritions are : calories = {cal}, fat = {fat}, carbs = {carb}, protien = {protien}")
+    print(f"food is a {name}\nnutritions : calories = {cal}, fat = {fat}g, carbs = {carb}g, protien = {protien}g")
