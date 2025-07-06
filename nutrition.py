@@ -1,8 +1,9 @@
 import sqlite3
+from config import DB_PATH
 
 class Nutrition:
     def __init__(self):
-        self.conn = sqlite3.connect("database/nutrition.db")
+        self.conn = sqlite3.connect(DB_PATH)
         self.cursor = self.conn.cursor()
     
     def __del__(self):

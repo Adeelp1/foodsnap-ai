@@ -2,16 +2,13 @@ import pickle
 import numpy as np
 import os
 import warnings
+from config import (MODEL_FILE_PATH, CLASS_NAME_FILE_PATH)
 
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 warnings.filterwarnings("ignore")
 
 import tensorflow as tf # type: ignore
-
-BASE_DIR = os.path.dirname(__file__)
-MODEL_FILE_PATH = os.path.join(BASE_DIR, "model", "model12(32).tflite")
-CLASS_NAME_FILE_PATH = os.path.join(BASE_DIR, "model", "class_name.pkl")
 
 class PredictFood:
     def __init__(self):
