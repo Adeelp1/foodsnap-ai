@@ -4,3 +4,4 @@ __pycache__
 test/
 database/database.py
 database/normalize.txt
+weight/

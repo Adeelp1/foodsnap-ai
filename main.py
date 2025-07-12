@@ -18,4 +18,4 @@ if __name__ == "__main__":
         nutri = ntn.get_nutrition(name, weight)
         cal, fat, carb, protien = nutri
 
-        print(f"\nfood is a {name}\nNutrients per 100 grams : calories = {cal}, fat = {fat}g, carbs = {carb}g, protien = {protien}g\n")
+        print(f"\nfood is a {name}\nNutrients : calories = {cal}, fat = {fat}g, carbs = {carb}g, protien = {protien}g\n")

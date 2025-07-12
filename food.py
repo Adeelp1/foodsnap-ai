@@ -11,13 +11,15 @@ warnings.filterwarnings("ignore")
 import tensorflow as tf # type: ignore
 
 class PredictFood:
+
+    interpreter = tf.lite.Interpreter(model_path=MODEL_FILE_PATH)
+    with open(CLASS_NAME_FILE_PATH, "rb") as f:
+            class_names = pickle.load(f)
+
     def __init__(self) -> None:
-        self.interpreter = tf.lite.Interpreter(model_path=MODEL_FILE_PATH)
         self.classify_lite = self.interpreter.get_signature_runner('serving_default')
         self.img_height = 224
         self.img_width = 224
-        with open(CLASS_NAME_FILE_PATH, "rb") as f:
-            self.class_names = pickle.load(f)
     
     def convert_image_to_array(self, img: str) -> tf.Tensor:
         """

@@ -61,7 +61,7 @@ pip install -r requirements.txt
 ```
 Make sure you have all dependencies installed, then run the program using:
 ```bash
-python main.py path/to/your/image.jpg
+python main.py
 ```
 
 ## 📌 Future Improvements
